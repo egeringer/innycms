@@ -1,0 +1,282 @@
+<?php
+
+$_['Logout'] = 'Salir';
+$_['Login'] = 'Entrar';
+$_['Lock Screen'] = 'Bloquear pantalla';
+$_['My profile'] = 'Mi perfil';
+$_['Recover'] = 'Recuperar';
+$_['Back'] = 'Volver';
+$_['Remember'] = 'Recordar';
+$_['Forgot your password?'] = '¿Olvidaste tu contraseña?';
+$_['Forgot my password'] = 'Olvidé mi contraseña';
+$_['User'] = 'Usuario';
+$_['Password'] = 'Constraseña';
+$_['Enter your email address to reset your password'] = 'Ingresa tu correo electrónico para reestablecer tu contraseña.';
+$_['Enter username and password.'] = 'Ingrese usuario y contraseña.';
+$_['Enter username and password.'] = 'Ingrese usuario y contraseña.';
+
+// Bucket
+$_['Bucket Quick Actions'] = 'Acciones Rápidas del Bucket';
+$_['Bucket Statistics'] = 'Estadísticas del Bucket';
+$_['Clean Bucket'] = 'Limpiar Bucket';
+$_['Empty Bucket'] = 'Vaciar Bucket';
+$_['Upload new files to your bucket'] = 'Subir nuevos archivos al bucket';
+$_['Search files you have already uploaded'] = 'Buscá entre los archivos ya subidos';
+$_['Explore recently uploaded files.'] = 'Explorá los archivos recientemente subidos';
+$_['Drop files here or click to upload.'] = 'Arrastrá acá tus archivos o hacé click para subirlos.';
+$_['Repeated files will be skipped.'] = 'Los archivos duplicados serán ignorados.';
+$_['Filename or Tags'] = 'Nombres de Archivo o Etiquetas';
+$_['Enter tags or filenames you want to look for...'] = 'Ingresá los nombres de archivo o etiquetas que deseas buscar';
+$_['File Type'] = 'Tipo de Archivo';
+$_['All files'] = 'Todos los archivos';
+$_['Binary'] = 'Binario';
+$_['Image'] = 'Imagen';
+$_['PDF'] = 'PDF';
+$_['Document'] = 'Documento de Texto';
+$_['Spreadsheet'] = 'Hoja de Calculo';
+$_['Presentation'] = 'Presentacion de Diapositivas';
+$_['Video'] = 'Video';
+$_['Audio'] = 'Audio';
+$_['Flash'] = 'Flash';
+$_['Search'] = 'Buscar';
+$_['Clean search'] = 'Limpiar búsqueda';
+$_['No results found. Try other keywords'] = 'No se encontraron resultados. Intentá con otras palabras clave';
+$_['or do not filter by file type'] = 'o no filtres por tipo de archivo';
+$_['No files has been uploaded yet.'] = 'Todavía no se han subido archivos.';
+$_['Name'] = 'Nombre';
+$_['File Url'] = 'Url del Archivo';
+$_['Size'] = 'Tamaño';
+$_['Count'] = 'Cantidad';
+$_['Created'] = 'Creado';
+$_['Modified'] = 'Modificado';
+$_['Tags'] = 'Etiquetas';
+$_['Id'] = 'Id';
+$_['Mime'] = 'Mime';
+$_['Type'] = 'Tipos';
+$_['View'] = 'Ver';
+$_['Back'] = 'Atras';
+$_['Add Tags'] = 'Agregar Etiquetas';
+$_['Download'] = 'Descargar';
+$_['Delete'] = 'Borrar';
+$_['Used %s time'] = 'Usado %s veces';
+$_['Usages'] = 'Usos';
+$_['Searching <b>%s</b> in %s'] = 'Buscando <b>%s</b> en %s';
+$_['Actions'] = 'Acciones';
+$_['View'] = 'Ver';
+$_['Copy Link'] = 'Copiar Enlace';
+$_['Download'] = 'Descargar';
+$_['Add and remove tags from'] = 'Agregar y quitar etiquetas de';
+
+// Bucket Modals
+$_['Confirm Clean Bucket Action'] = 'Confirmar limpieza de Bucket';
+$_['You are about to clean bucket files.'] = 'Estás a punto de limpiar los archivos del bucket';
+$_['<strong>All files</strong> that are <strong>not being used</strong> on your site will be <strong>permanently deleted</strong>.'] = '<strong>Todos los archivos</strong> que  <strong>no se encuentren en uso</strong> en su sitio serán <strong>permanentemente borradas</strong>.';
+$_['This action <strong>cannot be undone</strong>.'] = 'Esta acción <strong>no puede deshacerse</strong>.';
+$_['Enter your Password'] = 'Ingrese su contraseña';
+$_['Close'] = 'Cerrar';
+$_['Cancel'] = 'Cancelar';
+$_['Clean Bucket'] = 'Limpiar Bucket';
+$_['Confirm Empty Bucket Action'] = 'Confirmar vaciado de Bucket';
+$_['You are about to clean bucket files.'] = 'Estás a punto de limpiar los archivos del bucket';
+$_['<strong>All files</strong> on your site will be <strong>permanently deleted</strong>.'] = '<strong>Todos los archivos</strong> de su sitio serán <strong>borrados permanentemente</strong>.';
+$_['Empty Bucket'] = 'Vaciar Bucket';
+$_['Confirm File Deletion'] = 'Confirmar Borrado de Archivo';
+$_['You are about to delete a file from the bucket.'] = 'Estás a punto de borrar un archivo del bucket';
+$_['This means that <strong id="modal-item-data"></strong> will be <strong>permanently deleted</strong>.'] = 'Esto significa que <strong id="modal-item-data"></strong> será <strong>borrado permanentemente</strong>.';
+
+// Menú
+$_['Profile'] = 'Perfil';
+$_['Visit My Site'] = 'Visitar mi Sitio';
+$_['Lock'] = 'Bloquear';
+$_['Logout'] = 'Salir';
+$_['Language'] = 'Idioma';
+$_['User'] = '';
+$_['Site'] = '';
+$_['Sites'] = '';
+
+// Choose
+$_['Choose a Site'] = 'Elegir un sitio';
+$_['Edit Site'] = 'Editar sitio';
+$_['Visit Site'] = 'Visitar sitio';
+
+// Collection
+$_['Collections'] = 'Colecciones';
+$_['Collection Quick Actions'] = 'Acciones Rápidas de Colecciones';
+$_['Add'] = 'Agregar';
+$_['Import'] = 'Importar';
+$_['Export'] = 'Exportar';
+$_['Upload'] = 'Subir';
+$_['Download'] = 'Descargar';
+$_['Empty'] = 'Vaciar';
+$_['Status'] = 'Estado';
+$_['All'] = 'Todos';
+$_['Drafts'] = 'Borradores';
+$_['Published'] = 'Publicados';
+$_['Unpublished'] = 'No Publicados';
+$_['Search...'] = 'Buscar...';
+$_['Confirm Empty'] = 'Confirmar vaciar';
+$_['You are about to empty this collection.'] = 'Está a punto de vaciar esta colección';
+$_['<strong>All documents</strong> on this collection will be <strong>permanently deleted</strong>.'] = '<strong>Todos los documentos</strong> de esta colección serán <strong>borrados permanentemente</strong>.';
+$_['Empty Collection'] = 'Vaciar colección';
+$_['Export Collection'] = 'Exportar colección';
+$_['You are about to export this collection.'] = 'Estás a punto de exportar esta colección.';
+$_['You can choose to export the entire collection in <strong>CSV</strong> or <strong>JSON</strong> format. This will be helpful if you want to move information to another InnyCMS instance or edit this collection on an external software.'] = 'Podés oprtar por exportar toda la colección en formato <strong>CSV</strong> o <strong>JSON</strong>. Esto será de gran utilidad si deseas mover información a otra instancia de InnyCMS o editar esta colección en un software externo.';
+$_['If you are not sure what to choose, please ask your <strong>webmaster</strong>.'] = 'Si no estás seguro de qué opción elegir, por favor contacte a su <strong>webmaster</strong>.';
+$_['Download Collection'] = 'Descargar Colección';
+$_['You are about to download this collection.'] = 'Estás a punto de descargar esta colección';
+$_['You will be able to use this information in any external software in <strong>CSV</strong> format.'] = 'Podrás usar esta información en cualquier software externo en formato <strong>CSV</strong>.';
+$_['Import Collection'] = 'Importar Colección';
+$_['You are about to import data to this collection.'] = 'Estás a punto de importar datos a esta colección';
+$_['Make sure you import a clean and genuine copy of the collection in order to preserve data consistency.'] = 'Asegurate de importar una copia limpia y genuina de la colección con el fin de preservar la consistencia de los datos.';
+$_['Do this under your own risk.'] = 'Realice esto bajo su propio riesgo';
+$_['Choose file'] = 'Elegir archivo';
+$_['Submit'] = 'Enviar';
+$_['You are about to upload new data to this collection.'] = 'Estás a punto de subir nuevos datos a esta colección';
+$_['Make sure you import a <strong>CSV</strong> file with the right information fields.'] = 'Asegurate de importar un archivo <strong>CSV</strong> con los campos de información correctos.';
+$_['Confirm Document Deletion'] = 'Confirmar borrado de documento';
+$_['You are about to delete a document from this collection.'] = 'Estás a punto de borrar un documento de esta colección';
+$_['Delete Document'] = 'Borrar documento';
+$_['Unpublish'] = 'No Publicar';
+$_['Publish'] = 'Publicar';
+$_['View'] = 'Ver';
+$_['Edit'] = 'Editar';
+$_['Duplicate'] = 'Duplicar';
+$_['Move Up'] = 'Mover hacia arriba';
+$_['Move Down'] = 'Mover hacia abajo';
+$_['Delete'] = 'Borrar';
+$_['Add'] = 'Agregar';
+$_['Back'] = 'Atrás';
+$_['Publish & New'] = 'Publicar & Nuevo';
+$_['Publish & View'] = 'Publicar & Ver';
+$_['Publish & Duplicate'] = 'Publicar & Duplicar';
+$_['Publish & Close'] = 'Publicar & Cerrar';
+$_['Save Unpublished'] = 'Guardar no Publicado';
+$_['Save'] = 'Guardar';
+$_['Save & New'] = 'Guardar & Nuevo';
+$_['Save & View'] = 'Guardar & Ver';
+$_['Save & Duplicate'] = 'Guardar & Duplicar';
+$_['Save & Close'] = 'Guardar & Cerrar';
+$_['Undo Unsaved Changes'] = 'Deshacer cCambios no Guardados';
+$_['Save & Publish'] = 'Guardar & Publicar';
+$_['Save & Unpublish'] = 'Guardar & No Publicar';
+$_['Save as Draft'] = 'Guardar como Borrador';
+$_['Discard Draft'] = 'Descartar Borrador';
+$_['Delete'] = 'Borrar';
+$_['You are about to delete this document.'] = 'Estás a punto de borrar este doocumento';
+$_['Confirm Document Draft Discard'] = '';
+$_['You are about to discard all changes saved to this document.'] = '';
+$_['This means that all changes made in <strong id="modal-item-data"></strong> will be <strong>permanently discarded</strong>.'] = '';
+$_['Discard'] = 'Descartar';
+$_['Draft'] = 'Borrador';
+$_['Creation Date'] = 'Fecha de Creación';
+$_['Last Update Date'] = 'Fecha de Última Modificación';
+$_['Creation User'] = 'Usuario de Creación';
+$_['Last Update User'] = 'Usuario de Última Modificación';
+$_['Has Draft'] = 'Tiene Borrador';
+$_['No Draft'] = 'No Tiene Borrador';
+
+// Dashboard
+$_['Dashboard'] = 'Panel';
+
+// Lock - Page
+$_['Locked User'] = 'Usuario Bloqueado';
+$_['Sign In'] = 'Ingresar';
+$_['Password'] = 'Contraseña';
+$_['Login to your InnyCMS Admin Panel.'] = 'Iniciá sesión en tu panel de Administración de InnyCMS';
+$_['Not <b>%s</b> ?'] = 'No sos <b>%s</b> ?';
+
+// Login Page
+$_['Sign In To Admin Panel'] = 'Ingresar a Panel de Administración';
+$_['Username'] = 'Usuario';
+$_['Password'] = 'Contraseña';
+$_['Remember me'] = 'Recordarme';
+$_['Forget Password ?'] = 'Olvidaste tu contraseña?';
+$_['Enter your email to reset your password:'] = 'Ingresa tu correo electrónico para reestablecer tu contraseña:';
+$_['Request'] = 'Solicitar';
+
+// Profile
+$_['User Profile'] = 'Perfil de Usuario';
+$_['Your Profile'] = 'Tu Perfil';
+$_['Update Personal Info'] = 'Actualizar Información Personal';
+$_['Change Password'] = 'Cambiar Contraseña';
+$_['Personal Details'] = 'Detalles Personales';
+$_['Error'] = 'Error';
+$_['Success!'] = 'Éxito!';
+$_['Name'] = 'Nombre';
+$_['Last Name'] = 'Apellido';
+$_['E-Mail'] = 'Correo Electrónico';
+$_['If you want to change your username, please contact your webmaster.'] = 'Si quiere cambiar su nombre de usuario, contacte a su webmaster.';
+$_['Save changes'] = 'Guardar cambios';
+$_['Update Your Password'] = 'Actualizar Tu Contraseña';
+$_['Current Password'] = 'Contraseña Actual';
+$_['New Password'] = 'Nueva Contraseña';
+$_['Repeat New Password'] = 'Repetir Nueva Contraseña';
+$_['Update Password'] = 'Actualizar Contraseña';
+
+// Profile - PHP
+$_['New Personal Information Saved'] = 'Nueva información personal guardada';
+$_['All fields are required.'] = 'Todos los campos son requeridos';
+$_['Old Password is required.'] = 'La contraseña anterior es requerida';
+$_['New Password is required.'] = 'La contraseña nueva es requerida';
+$_['New Password Repeat is required.'] = 'La nueva contraseña repetida es requerida';
+$_['New Passwords do not match.'] = 'Las nuevas contraseñas no coinciden';
+$_['Old Password is incorrect.'] = 'La contraseña es incorrecta';
+$_['Password Changed Correctly'] = 'Contraseña actualizada correctamente';
+
+// Bucket - PHP
+$_['You cannot perform this action'] = 'No puedes realizar esta acción';
+$_['Item deleted correctly'] = 'Elemento borrado correctamente';
+$_['Item could not be deleted'] = 'Elemento no borrado';
+$_['Bucket cleaned correctly'] = 'Bucket limpio';
+$_['Bucket could not be cleaned'] = 'Bucket no limpio';
+$_['Wrong password entered'] = 'Contraseña incorrecta';
+$_['Bucket emptied correctly'] = 'Bucket vacío';
+$_['Bucket could not be emptied'] = 'Bucket no vacío';
+
+// Collection - PHP
+$_['You cannot perform update on this document'] = 'No podés actualizar este documento';
+$_['Collection emptied correctly'] = 'Colección vaciada correctamente';
+$_['Collection could not be emptied'] = 'Colección no vaciada';
+$_['Document deleted correctly'] = 'Documento borrado correctamente';
+$_['Document could not be deleted'] = 'Documento no borrado';
+$_['You are not allowed to insert an document in this collection'] = 'No tenés permiso para insertar un documento en esta colección';
+$_['Document added correctly'] = 'Documento agregado correctamente';
+$_['Document could not be added.<br/>Please check the marked fields.'] = 'Documento no agregado.<br/>Corroborá los campos marcados.';
+$_['You are not allowed to edit an document in this collection'] = 'No tenés permiso para editar un documento en esta colección';
+$_['Document saved correctly'] = 'Documento guardado correctamente';
+$_['Document could not be saved'] = 'Documento no guardado';
+$_['Document published correctly'] = 'Documento publicado correctamente';
+$_['Document could not be published'] = 'Documento no publicado';
+$_['Document unpublished correctly'] = 'Documento despublicado corrrectamente';
+$_['Document could not be unpublished'] = 'Documento no despublicado';
+$_['Document draft discarded correctly'] = 'Borrador descartado correctamente';
+$_['Document draft could not be discarded'] = 'Borrador no descartado';
+$_['Document moved up correctly'] = 'Documento movido correctamente';
+$_['Document could not be moved up'] = 'Documento no movido';
+$_['Document moved down correctly'] = 'Documento movido correctamente';
+$_['Document could not be moved down'] = 'Documento no movido';
+$_['You are not allowed to upload to this collection'] = 'No tenés permiso para subir datos a esta colección';
+$_['You are not allowed to import this collection'] = 'No tenés permiso para importar datos a esta colección';
+$_['Invalid action provided'] = 'Acción no válida';
+
+// InnyCMS.php
+$_['Username is required.'] = 'Usuario es requerido.';
+$_['Password is required.'] = 'Contraseña es requerida.';
+$_['Incorrect username or password.'] = 'Usuario o contraseña incorrectos.';
+$_['Your account has been disabled or deleted.'] = 'Tu cuenta está inhabilitada o borrada.';
+$_['Your account has no sites.'] = 'Tu cuenta no tiene sitios.';
+$_['Your site has been disabled.'] = 'Tu sitio ha sido inhabilitado.';
+$_['Wrong password entered.'] = 'Contraseña incorrecta';
+$_['This account has been disabled.'] = 'Esta cuenta ha sido inhabilitada.';
+$_['You have been logged out.'] = 'Se ha cerrado tu sesión';
+$_['Welcome back!'] = 'Bienvenido!';
+$_['Welcome!'] = 'Bienvenido!';
+$_['Password recovery instructions has been sent to your email.'] = 'Las instrucciones para recuperar su contraseña se le enviaron por correo electrónico';
+
+// InnyCollection.php
+$_['Data uploaded Correctly'] = 'Datos subidos correctamente';
+$_['No collection named %s for site %'] = 'No existe la coleccción %s para el sitio %s';
+$_['No file uploaded'] = 'No hay archivos subidos';
+$_['There was an error while uploading the file. Please check: '] = 'Hubo un error al subir el archivo. Por favor revise: ';
+$_['File type not supported'] = 'Archivo no soportado';
+$_['Collection Imported Correctly'] = 'Colección importada correctamente';

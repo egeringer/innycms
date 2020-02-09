@@ -1,0 +1,121 @@
+/* LOGIN */
+DIV.wrapper {
+    position:absolute;top:0;bottom:0;left:0;right:0;
+}
+
+DIV.form-container {
+    position:absolute;bottom:0;top:0;left:0;right:0;margin:auto;height:400px;
+}
+
+
+/* COMMON */
+.divheader {
+    padding:10px;
+    background-color: rgb(214, 70, 53);
+    color:#fff;
+    min-height:25px;
+    height:auto;
+    font-weight:bold;
+    border-left:5px solid transparent;
+}
+
+.divrow {
+    padding:10px;
+    min-height:50px;
+    height:auto;
+    border-bottom:1px solid #e7ecf1;
+    border-left:5px solid transparent;
+}
+
+.divrow:nth-child(even){
+    background-color: #fbfcfd;
+}
+
+.divrow:hover {
+    border-left:5px solid rgb(214, 70, 53);
+    background-color: rgba(	250,128,114,0.1);
+}
+
+.icons {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.icons a {
+    display: flex;
+    flex: 1;
+    padding: 10px 0;
+    color: inherit;
+    text-decoration: inherit;
+    text-align:center;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons a i {
+    font-size:22px;
+}
+
+
+.listing-icons a {
+    display:block;
+    padding: 10px 0;
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.listing-icons a i {
+    font-size:22px;
+    width:30px;
+    text-align: center;
+}
+
+@media (max-width:767px){
+    .listing-icons {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .listing-icons a {
+        display: flex;
+        flex: 1;
+        padding: 10px 0;
+        color: inherit;
+        text-decoration: inherit;
+        text-align:center;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.overflow-hidden {
+    overflow:hidden;
+}
+
+
+
+.pre {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857;
+    word-break: break-all;
+    word-wrap: break-word;
+    color: #333;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 0!important;
+    -moz-border-radius: 0!important;
+    border-radius: 0!important;
+}

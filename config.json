@@ -1,0 +1,16 @@
+{
+  "DB_DataObject": {
+    "database": "mysqli://user:pass@localhost/inny_cms",
+    "schema_location": "../DAOs",
+    "class_location": "../DAOs",
+    "require_prefix": "DataObjects/",
+    "class_prefix": "DataObjects_"
+  },
+  "customizations": {
+    "metadata": "../../web/innycms-customization/metadata",
+    "pages": "../../web/innycms-customization/pages",
+    "templates": "../../web/innycms-customization/templates",
+    "css": "../../web/innycms-customization/css",
+    "images": "../../web/innycms-customization/images"
+  }
+}

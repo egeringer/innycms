@@ -1,0 +1,21 @@
+RewriteEngine on
+
+#esto chequea que se haya solicitado la raiz del sitio y que no exista el .htaccess
+#y en ese caso genera la metadata con el .htaccess
+RewriteCond %{REQUEST_FILENAME} ^(.*)/$
+RewriteCond %{REQUEST_FILENAME}/web/.htaccess !-f
+RewriteRule ^$ web/update_metadata.php [L]
+
+RewriteRule ^cms$ %{REQUEST_SCHEME}://%{HTTP_HOST}/cms/ [L,R=301]
+RewriteRule ^cms/admin$ %{REQUEST_SCHEME}://%{HTTP_HOST}/cms/admin/ [L,R=301]
+
+RewriteCond %{REQUEST_URI} !^(.*)/innyCMS/(.*)
+RewriteRule ^cms/admin/(.*)$ innyCMS/admin/$1 [L]
+
+RewriteCond %{REQUEST_URI} !^(.*)/innyCMS/(.*)
+RewriteRule ^cms/(.*)$ innyCMS/cms/$1 [L]
+
+#esto corta la recursión de /web/
+RewriteCond %{REQUEST_URI} !^(.*)/web/(.*)
+RewriteCond %{REQUEST_URI} !^(.*)/innyCMS/(.*)
+RewriteRule ^(.*)$ web/$1

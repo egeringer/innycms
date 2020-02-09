@@ -1,0 +1,43 @@
+.m-login.m-login--1 .m-login__wrapper {
+    padding-top:25%;
+}
+
+.m-login.m-login--1 .logo {
+    display: block;
+    position: relative;
+    width:200px;
+    height:100px;
+    margin:0 auto;
+    background-image:url("../images/inny-logo.svg");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.m-login__content {
+    background-image: url('../images/login-background.jpg');
+}
+
+.m-login.m-login--1 .m-login__wrapper .m-login__form .m-form__group .form-control::-moz-placeholder{
+    color:#9496a0;
+    opacity:1
+}
+.m-login.m-login--1 .m-login__wrapper .m-login__form .m-form__group .form-control:-ms-input-placeholder{
+    color:#9496a0
+}
+.m-login.m-login--1 .m-login__wrapper .m-login__form .m-form__group .form-control::-webkit-input-placeholder{
+    color:#9496a0
+}
+.m-login.m-login--1 .m-login__wrapper .m-login__form .m-form__group .form-control.m-login__form-input--last{
+    border:0;
+}
+.m-login.m-login--1 .m-login__wrapper .m-login__form .m-form__group .form-control:focus::-moz-placeholder{
+    color:#f4516c;
+    opacity:1
+}
+.m-login.m-login--1 .m-login__wrapper .m-login__form .m-form__group .form-control:focus:-ms-input-placeholder{
+    color:#f4516c;
+}
+.m-login.m-login--1 .m-login__wrapper .m-login__form .m-form__group .form-control:focus::-webkit-input-placeholder{
+    color:#f4516c;
+}

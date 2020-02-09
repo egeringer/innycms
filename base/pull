@@ -1,0 +1,29 @@
+#!/bin/bash
+dir=`dirname "$0"`
+cd "$dir"
+
+if [ ! -f innyCMS/.gitignore ]; then
+	git submodule init
+fi
+
+git pull --recurse-submodules
+git submodule update --recursive
+
+# Hacer que el script pull de permiso de escrituras a todas las carpetas templates_c
+chmod ug+rwX web/templates_c
+chmod ug+rwX innyCMS/admin/templates_c
+chmod ug+rwX innyCMS/cms/templates_c
+
+HOSTINI=`cat HOST.ini | grep google.com | wc -l`
+
+if [ "$HOSTINI" != "0" ]; then
+	echo "PLEASE CHANGE HOST.ini AND SET 'desired_host' INFO!"
+	echo "PLEASE CHANGE HOST.ini AND SET 'desired_host' INFO!"
+	echo "PLEASE CHANGE HOST.ini AND SET 'desired_host' INFO!"
+fi
+
+if [ -f "innyCMS/megaUpdater/update.php" ]; then
+	cd innyCMS/megaUpdater
+	php update.php
+	cd ../..
+fi

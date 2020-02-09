@@ -1,0 +1,30 @@
+RewriteEngine on
+Options -MultiViews
+AddDefaultCharset utf-8
+
+# Reglas para mostrar los archivos de la tabla temporal
+RewriteRule ^image/(.*)/(.*) image.php?id_temporal=$1
+RewriteRule ^thumb/(.*)/(.*)-(.*)-(.*)/(.*) image.php?type=thumb&id_temporal=$1&width=$2&height=$3&quality=$4
+RewriteRule ^download/(.*)/(.*) download.php?id_temporal=$1
+RewriteRule ^movie/(.*)/(.*) download.php?id_temporal=$1&mode=inline
+
+# Reglas para las versiones de archivos JS y CSS
+RewriteRule ^js-([0-9]{12})-c/(.*).js$ templates_c/compressed.$2.js
+RewriteRule ^js-(.*)/(.*) js/$2
+RewriteRule ^css-(.*)/(.*) css/$2
+
+# New Rules
+RewriteRule ^login$ login.php?action=login
+RewriteRule ^logout$ login.php?action=logout
+RewriteRule ^dashboard$ index.php
+
+RewriteRule ^(list|add)-(site|user|collection)$ $2.php?action=$1 [L]
+RewriteRule ^(view|edit|enable|disable|setmainwtenance|unsetmaintenance|delete|sidebar)-site!(.+)$ site.php?action=$1&id=$2 [L]
+RewriteRule ^(view|edit|enable|disable|assignsysadmin|assignsiteadmin|delete|pass)-user!(.+)$ user.php?action=$1&id=$2 [L]
+RewriteRule ^(list|view|edit|delete)-collection!(.+)$ collection.php?action=$1&id=$2 [L]
+RewriteRule ^(assign|unassign|permission)-user!(.+)-site!(.+)$ user.php?action=$1&id=$2&id_site=$3 [L]
+
+RewriteRule ^(list)-(user|site)!(.+)-(user|site)$ $2.php?action=$4&id=$3 [L]
+
+# Previene la navegación en los directorios
+Options -Indexes

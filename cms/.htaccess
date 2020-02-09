@@ -1,0 +1,59 @@
+RewriteEngine on
+Options -MultiViews
+AddDefaultCharset utf-8
+
+rewritecond %{REQUEST_FILENAME} !-f
+RewriteRule ^image/(.*)x(.*)xtx(.*)x(.*)x(.*)/(.*)$ bucketfile.php?id_bucket=$1&hash=$2&mode=inline&type=thumb&width=$3&height=$4&quality=$5&fscache=true [L]
+rewritecond %{REQUEST_FILENAME} !-f
+RewriteRule ^image/(.*)x(.*)xcx(.*)x(.*)x(.*)/(.*)$ bucketfile.php?id_bucket=$1&hash=$2&mode=inline&type=crop&width=$3&height=$4&quality=$5&fscache=true [L]
+rewritecond %{REQUEST_FILENAME} !-f
+RewriteRule ^image/(.*)x(.*)/(.*)$ bucketfile.php?id_bucket=$1&hash=$2&mode=inline&fscache=true [L]
+rewritecond %{REQUEST_FILENAME} !-f
+RewriteRule ^flash/(.*)x(.*)/(.*)$ bucketfile.php?id_bucket=$1&hash=$2&mode=inline&fscache=true [L]
+rewritecond %{REQUEST_FILENAME} !-f
+RewriteRule ^download/(.*)x(.*)/(.*)$ bucketfile.php?id_bucket=$1&hash=$2&mode=attachment&fscache=true [L]
+rewritecond %{REQUEST_FILENAME} !-f
+RewriteRule ^pdf/(.*)x(.*)/(.*)$ bucketfile.php?id_bucket=$1&hash=$2&mode=attachment&fscache=true [L]
+
+RewriteRule ^bucket$ bucket.php [QSA]
+RewriteRule ^view-bucket!(.*)x(.*)$ bucket.php?action=view&id=$1&hash=$2
+RewriteRule ^tags-bucket!(.*)x(.*)$ bucket.php?action=tags&id=$1&hash=$2
+RewriteRule ^delete-bucket!(.*)x(.*)$ bucket.php?action=delete&id=$1&hash=$2 [QSA]
+RewriteRule ^statistics-bucket$ bucket.php?action=statistics
+RewriteRule ^home$ index.php
+RewriteRule ^login$ login.php?action=login
+RewriteRule ^logout$ login.php?action=logout
+RewriteRule ^lock$ login.php?action=lock
+RewriteRule ^profile$ profile.php
+RewriteRule ^choose$ choose.php
+RewriteRule ^choose!(.*)$ choose.php?public_id=$1
+
+RewriteRule ^delete-(.*)!(.*)$ collection.php?name=$1&action=delete&id=$2 [L]
+RewriteRule ^view-(.*)!(.*)$ collection.php?name=$1&action=view&id=$2 [L]
+RewriteRule ^edit-(.*)!(.*)$ collection.php?name=$1&action=edit&id=$2 [L]
+RewriteRule ^clone-(.*)!(.*)$ collection.php?name=$1&action=clone&id=$2 [L]
+RewriteRule ^publish-(.*)!(.*)$ collection.php?name=$1&action=publish&id=$2 [L]
+RewriteRule ^unpublish-(.*)!(.*)$ collection.php?name=$1&action=unpublish&id=$2 [L]
+RewriteRule ^discard-(.*)!(.*)$ collection.php?name=$1&action=discard&id=$2 [L]
+RewriteRule ^moveup-(.*)!(.*)$ collection.php?name=$1&action=moveup&id=$2 [L]
+RewriteRule ^movedown-(.*)!(.*)$ collection.php?name=$1&action=movedown&id=$2 [L]
+RewriteRule ^ws-(.*)$ ws.php?collectionName=$1 [L,QSA]
+RewriteRule ^add-(.*)$ collection.php?name=$1&action=add [L,QSA]
+RewriteRule ^list-(.*)$ collection.php?name=$1&action=list [L]
+RewriteRule ^draw-(.*)$ collection.php?name=$1&action=draw [L,QSA]
+RewriteRule ^download-(.*)$ collection.php?name=$1&action=download [L]
+RewriteRule ^upload-(.*)$ collection.php?name=$1&action=upload [L]
+RewriteRule ^exportcsv-(.*)$ collection.php?name=$1&action=exportcsv [L]
+RewriteRule ^exportjson-(.*)$ collection.php?name=$1&action=exportjson [L]
+RewriteRule ^import-(.*)$ collection.php?name=$1&action=import [L]
+
+# Reglas para las versiones de archivos JS y CSS
+RewriteRule ^js-([0-9]{12})-c/(.*).js$ templates_c/compressed.$2.js
+RewriteRule ^js-(.*)/(.*) js/$2
+RewriteRule ^css-(.*)/(.*) css/$2
+
+# Previene la navegación en los directorios
+Options -Indexes
+
+# For custom scripts
+RewriteRule ^customPage!(.*)$ custom-page.php?pageName=$1 [QSA]

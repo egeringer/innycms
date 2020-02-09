@@ -1,0 +1,5 @@
+RewriteEngine on
+Options -MultiViews
+AddDefaultCharset utf-8
+# Previene la navegación en los directorios
+Options -Indexes

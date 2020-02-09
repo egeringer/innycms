@@ -1,0 +1,29 @@
+RewriteEngine on
+
+RewriteRule ^image/(.*)x(.*)xtx(.*)x(.*)x(.*)/(.*)$ bucketfile.php?id_bucket=$1&hash=$2&mode=inline&type=thumb&width=$3&height=$4&quality=$5 [L]
+RewriteRule ^image/(.*)x(.*)xcx(.*)x(.*)x(.*)/(.*)$ bucketfile.php?id_bucket=$1&hash=$2&mode=inline&type=crop&width=$3&height=$4&quality=$5 [L]
+RewriteRule ^image/(.*)x(.*)/(.*)$ bucketfile.php?id_bucket=$1&hash=$2&mode=inline [L]
+RewriteRule ^flash/(.*)x(.*)/(.*)$ bucketfile.php?id_bucket=$1&hash=$2&mode=inline [L]
+RewriteRule ^pdf/(.*)x(.*)/(.*)$ bucketfile.php?id_bucket=$1&hash=$2&mode=inline [L]
+RewriteRule ^video/(.*)x(.*)/(.*)$ bucketfile.php?id_bucket=$1&hash=$2&mode=inline [L]
+RewriteRule ^download/(.*)x(.*)/(.*)$ bucketfile.php?id_bucket=$1&hash=$2&mode=attachment [L]
+
+# Reglas para las versiones de archivos JS y CSS
+RewriteRule ^js-([0-9]{12})-c/(.*).js$ templates_c/compressed.$2.js
+RewriteRule ^js-(.*)/(.*) js/$2
+RewriteRule ^css-([0-9]{12})-c/(.*).css$ templates_c/compressed.$2.css
+RewriteRule ^css-(.*)/(.*) css/$2
+
+# Previene la navegación en los directorios
+Options -Indexes
+
+# Muestra el Favicon en internet explorer
+RewriteRule ^favicon.ico images/favicon.ico
+
+# Errores
+ErrorDocument 403 /403
+ErrorDocument 404 /404
+ErrorDocument 500 /500
+RewriteRule ^403$ inny_error.php?code=403 [L]
+RewriteRule ^404$ inny_error.php?code=404 [L]
+RewriteRule ^500$ inny_error.php?code=500 [L]
