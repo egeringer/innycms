@@ -108,7 +108,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST" && isset($_REQUEST['action']) && $_REQUE
     //
 
     echo "Creating DB.ini.local File";
-    $data = file_get_contents('templates/DB.ini.local.tpl');
+    $data = file_get_contents('templates/config.json.tpl');
     $data = str_replace('@@DB_NAME@@',$dbName, $data);
     $data = str_replace('@@DB_USER@@',$dbUser, $data);
     $data = str_replace('@@DB_PASS@@',empty($dbPass)?'':":$dbPass", $data);
@@ -117,8 +117,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST" && isset($_REQUEST['action']) && $_REQUE
         echo "<span class='text-danger'> &#10008; </span><br/>";
         exit;
     }else{
-        file_put_contents(dirname(__FILE__).'/../DB.ini.local',$data);
-        Denko::openDB(dirname(__FILE__).'/../DB.ini.local');
+        file_put_contents(dirname(__FILE__).'/../config.json.local',$data);
+        Denko::openDB(dirname(__FILE__).'/../config.json.local');
         echo "<span class='text-success'> &#10004; </span><br/>";
     }
 
@@ -132,9 +132,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST" && isset($_REQUEST['action']) && $_REQUE
         }else{
             if(!file_exists(dirname(__FILE__).'/../DAOs/'.$dbName.'.ini')){
                 echo "Creating Symlinks ";
-                $response = symlink('inny_cms.ini',dirname(__FILE__).'/../DAOs/'.$dbName.'.ini');
-                $response2 = symlink('inny_cms.links.ini',dirname(__FILE__).'/../DAOs/'.$dbName.'.links.ini');
-                if($response && $response2){
+                $response = symlink(dirname(__FILE__).'/../DAOs/inny_cms.ini',dirname(__FILE__).'/../DAOs/'.$dbName.'.ini');
+                if($response){
                     echo "<span class='text-success'> &#10004; </span><br/>";
                 }else{
                     echo "<span class='text-danger'> &#10008; </span><br/>";
@@ -199,20 +198,6 @@ if($_SERVER['REQUEST_METHOD'] == "POST" && isset($_REQUEST['action']) && $_REQUE
             else
                 echo "<span class='text-danger'> &#10008; </span><br/>";
         }
-        echo "Creating admin symlinks ";
-        $response = symlink(dirname(__FILE__).'/../admin',dirname(__FILE__).'/../cms/admin');
-        if($response)
-            echo "<span class='text-success'> &#10004; </span><br/>";
-        else
-            echo "<span class='text-danger'> &#10008; </span><br/>";
-
-        echo "Creating cms symlinks ";
-        $response = symlink(dirname(__FILE__).'/../cms',dirname(__FILE__).'/../../web/cms');
-        if($response)
-            echo "<span class='text-success'> &#10004; </span><br/>";
-        else
-            echo "<span class='text-danger'> &#10008; </span><br/>";
-
     }
     //
     // Finished
